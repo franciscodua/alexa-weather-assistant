@@ -1,0 +1,46 @@
+{
+    "session": {
+        "new": true,
+        "sessionId": "amzn1.echo-api.session.83beb485-8741-4487-a311-f6fd8eb3d041",
+        "user": {
+            "userId": "amzn1.ask.account.AERCPHTTQNVYJ3K5VHDOBRUJM5567AR7QSJEDHPAE3PDFANEVFUTCFIEIIB4ELL24WRSNFZ6WRF3CTR7TYPEGW2XPXYULW5RINSFDYMI3BWFCIWFFESWR35GTXAFSU7BD2SE3REOKMQH6FZRB5LJ2SEJY43E2BJNQOJE5T6GDSDMYO3MAQAC4O5J4ESDUGANMFM3H7NMUWCWTXQ"
+        },
+        "application": {
+            "applicationId": "amzn1.ask.skill.8f4d22e7-6b6e-4106-a693-df99001296a3"
+        }
+    },
+    "version": "1.0",
+    "request": {
+        "locale": "en-US",
+        "timestamp": "2018-07-04T18:42:54Z",
+        "type": "IntentRequest",
+        "requestId": "amzn1.echo-api.request.23230bc5-3a53-421a-838f-4473ab7a7224",
+        "intent": {
+            "slots": {
+                "day": {
+                    "name": "day",
+                    "value": "2018-07-05",
+                    "confirmationStatus": "NONE"
+                }
+            },
+            "name": "CanHangClothes",
+            "confirmationStatus": "NONE"
+        }
+    },
+    "context": {
+        "System": {
+            "device": {
+                "deviceId": "amzn1.ask.device.AFYI45S6VEJTMIWS5LBDGXRK3WNR5UPRBAS5EIJFRIGXG3QCQF62UP3EOVFEQ2I6ZFWIV5RBYQ2DVTRETSQKNDTVZ5QDGA3VQIR3UVJM2XVMAZFNOCBVB5DKWV4PDFU3ONTO2BS6NMAN53E7WV4WSI2AE6QQ",
+                "supportedInterfaces": {}
+            },
+            "application": {
+                "applicationId": "amzn1.ask.skill.8f4d22e7-6b6e-4106-a693-df99001296a3"
+            },
+            "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjhmNGQyMmU3LTZiNmUtNDEwNi1hNjkzLWRmOTkwMDEyOTZhMyIsImV4cCI6MTUzMDczMzM3NCwiaWF0IjoxNTMwNzI5Nzc0LCJuYmYiOjE1MzA3Mjk3NzQsInByaXZhdGVDbGFpbXMiOnsiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUZZSTQ1UzZWRUpUTUlXUzVMQkRHWFJLM1dOUjVVUFJCQVM1RUlKRlJJR1hHM1FDUUY2MlVQM0VPVkZFUTJJNlpGV0lWNVJCWVEyRFZUUkVUU1FLTkRUVlo1UURHQTNWUUlSM1VWSk0yWFZNQVpGTk9DQlZCNURLV1Y0UERGVTNPTlRPMkJTNk5NQU41M0U3V1Y0V1NJMkFFNlFRIiwidXNlcklkIjoiYW16bjEuYXNrLmFjY291bnQuQUVSQ1BIVFRRTlZZSjNLNVZIRE9CUlVKTTU1NjdBUjdRU0pFREhQQUUzUERGQU5FVkZVVENGSUVJSUI0RUxMMjRXUlNORlo2V1JGM0NUUjdUWVBFR1cyWFBYWVVMVzVSSU5TRkRZTUkzQldGQ0lXRkZFU1dSMzVHVFhBRlNVN0JEMlNFM1JFT0tNUUg2RlpSQjVMSjJTRUpZNDNFMkJKTlFPSkU1VDZHRFNETVlPM01BUUFDNE81SjRFU0RVR0FOTUZNM0g3Tk1VV0NXVFhRIn19.ci3pVzX1hCWneNV-O5gc6IG7990Uo3gyDDlrURp0PWS0Ik-gkDcfcCX5lug8j9npJsUqHi7cHNfOQagerkDWIlSk23EuapUqqWGpAh9ieh1elrudW6YIsvfwzu_SG_EjWvI8QB165ACRy6A_nxD6uSxmYj-pbkLA5XridnYAROHoQXnj5dsEyTnB3-WW0Ecn2xNYHqpyiatj7SALozvmQAgXqcRHyLUdk5pdu6asMH8pXpDyQPjJwYhFfzo3oiAaTgTEmobnxAuFpSiAKNSuW1TANFXYwg_xOHd08sodWUqXhN4_CeIF05DSHB1GpUkZqdADhbSrTRPtC6nBhQKM4w",
+            "user": {
+                "userId": "amzn1.ask.account.AERCPHTTQNVYJ3K5VHDOBRUJM5567AR7QSJEDHPAE3PDFANEVFUTCFIEIIB4ELL24WRSNFZ6WRF3CTR7TYPEGW2XPXYULW5RINSFDYMI3BWFCIWFFESWR35GTXAFSU7BD2SE3REOKMQH6FZRB5LJ2SEJY43E2BJNQOJE5T6GDSDMYO3MAQAC4O5J4ESDUGANMFM3H7NMUWCWTXQ"
+            },
+            "apiEndpoint": "https://api.amazonalexa.com"
+        }
+    }
+}

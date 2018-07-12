@@ -1,0 +1,41 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "weather assistant",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CanHangClothes",
+                    "slots": [
+                        {
+                            "name": "day",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "Can I lay out my clothes {day}",
+                        "Can I hang my clothes {day} ",
+                        "Can I lay out my clothes",
+                        "Can I hang my clothes"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
