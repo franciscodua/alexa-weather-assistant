@@ -1,12 +1,12 @@
 import os
 import datetime
-import requests
+from botocore.vendored import requests
 import json
 
 class DayWeatherInfo:
     def __init__(self, infoDict):
         self.date = get_date_from_response(infoDict)
-        self.precipitationProb = infoDict['precipProbability']
+        self.precipitationProb = long(infoDict['precipProbability'])
         self.summary = infoDict['summary']
         self.minTemperature = infoDict['temperatureMin']
         self.maxTemperature = infoDict['temperatureMax']
