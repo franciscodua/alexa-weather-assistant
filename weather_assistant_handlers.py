@@ -31,10 +31,11 @@ class CanHangClothes(RequestHandler):
         try:
             rains, precipitationProb = weather_information.rains_on_day(day)
             if rains:
-                text = ''.join(["No. There's a ", str(precipitationProb), \
-                    "% probablity of raining. Try again another time."])
+                text = "No. There's a " + str(precipitationProb) + \
+                    "% probablity of raining. Try again another time."
             else:
-                text = "Yeah. It probably won't rain."
+                text = "Yeah. It probably won't rain. There is " + \
+                    str(precipitationProb) + "% probability of raining."
         except weather_information.DayNotFoundException as e:
             text = str(e)
 
@@ -48,9 +49,10 @@ class CanHangClothes(RequestHandler):
 class AnswerError(ErrorHandler):
     def handle(self, request, exception):
         error_message = str(exception)
-        print("Error handling request: " + error_message)
+        print("Error handler: Error handling request: " + error_message)
         return AlexaResponse().\
             set_output_text(error_message).\
             set_card_title("Weather assistant error").\
             set_card_content(error_message).\
-            set_end_session(True)
+            set_end_session(True).\
+            response()
