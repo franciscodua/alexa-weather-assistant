@@ -26,8 +26,8 @@ class AlexaResponse:
             "version": "1.0",
             "response": {
                 "outputSpeech": {
-                    "type": "PlainText",
-                    "text": self.output_text,
+                    "type": "SSML",
+                    "ssml": "<speak>" + self.output_text + "</speak>",
                 },
             "card": {
                 "type": "Simple",

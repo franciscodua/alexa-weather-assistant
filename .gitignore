@@ -103,3 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 set_weather_variables.sh
+
+.vscode

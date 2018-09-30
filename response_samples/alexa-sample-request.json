@@ -1,0 +1,45 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "amzn1.echo-api.session.c1bb9b2f-7db7-4617-a6de-604ffff09a39",
+		"application": {
+			"applicationId": "amzn1.ask.skill.8f4d22e7-6b6e-4106-a693-df99001296a3"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AERCPHTTQNVYJ3K5VHDOBRUJM5567AR7QSJEDHPAE3PDFANEVFUTCFIEIIB4ELL24WRSNFZ6WRF3CTR7TYPEGW2XPXYULW5RINSFDYMI3BWFCIWFFESWR35GTXAFSU7BD2SE3REOKMQH6FZRB5LJ2SEJY43E2BJNQOJE5T6GDSDMYO3MAQAC4O5J4ESDUGANMFM3H7NMUWCWTXQ"
+		}
+	},
+	"context": {
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.8f4d22e7-6b6e-4106-a693-df99001296a3"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AERCPHTTQNVYJ3K5VHDOBRUJM5567AR7QSJEDHPAE3PDFANEVFUTCFIEIIB4ELL24WRSNFZ6WRF3CTR7TYPEGW2XPXYULW5RINSFDYMI3BWFCIWFFESWR35GTXAFSU7BD2SE3REOKMQH6FZRB5LJ2SEJY43E2BJNQOJE5T6GDSDMYO3MAQAC4O5J4ESDUGANMFM3H7NMUWCWTXQ"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AFYI45S6VEJTMIWS5LBDGXRK3WNR5UPRBAS5EIJFRIGXG3QCQF62UP3EOVFEQ2I6ZFWIV5RBYQ2DVTRETSQKNDTVZ5QDGA3VQIR3UVJM2XVMAZFNOCBVB5DKWV4PDFU3ONTO2BS6NMAN53E7WV4WSI2AE6QQ",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "ACCESS_TOKEN"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.d389ea96-bd0c-4f30-bb69-2f27d606cc3f",
+		"timestamp": "2018-09-29T16:31:50Z",
+		"locale": "en-US",
+		"intent": {
+			"name": "CanHangClothes",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"day": {
+					"name": "day",
+					"confirmationStatus": "NONE"
+				}
+			}
+		}
+	}
+}

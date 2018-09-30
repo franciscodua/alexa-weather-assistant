@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 from alexa import RequestHandler, ErrorHandler
 from alexa_response import AlexaResponse
 import weather_information
@@ -24,25 +24,39 @@ class CanHangClothes(RequestHandler):
     def handle(self, request):
         parameters = request["intent"]["slots"]
         if "value" in parameters["day"]:
-            day = datetime.datetime.strptime(parameters["day"]["value"], "%Y-%m-%d").date()
+            day = datetime.strptime(parameters["day"]["value"], "%Y-%m-%d").date()
         else:
-            day = datetime.date.today()
+            # this is using the timestamp that comes from the request itself.
+            day = datetime.strptime(request["timestamp"] ,"%Y-%m-%dT%H:%M:%SZ").date()
     
         try:
-            rains, precipitationProb = weather_information.rains_on_day(day)
+            weather_assistant = weather_information.WeatherAssistant()
+            rains, precipitationProb = weather_assistant.rains_on_day(day)
             if rains:
                 text = "No. There's a " + str(precipitationProb) + \
-                    "% probablity of raining. Try again another time."
+                    "% probablity of raining. "
+                clear_day = weather_assistant.get_next_clear_day(day)
+                if clear_day is not None:
+                    # card_content needs to be a different from text because of SSML
+                    card_content = text + "Try again on " + str(clear_day)
+                    text = text +\
+                    "Try again on <say-as interpret-as=\"date\">" +\
+                    clear_day.strftime("????%m%d") +\
+                    "</say-as>."
+                else:
+                    text = text + "Try again another time."
+                    card_content = text
             else:
                 text = "Yeah. It probably won't rain. There is " + \
                     str(precipitationProb) + "% probability of raining."
+                card_content = text
         except weather_information.DayNotFoundException as e:
             text = str(e)
 
         return AlexaResponse().\
             set_output_text(text).\
             set_card_title("Can I hang my clothes").\
-            set_card_content(text).\
+            set_card_content(card_content).\
             set_end_session(True).\
             response()
 

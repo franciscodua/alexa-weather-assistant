@@ -9,6 +9,9 @@ class ErrorHandler:
     def handle(self, request, exception):
         raise NotImplementedError
 
+
+# Not really necessary for such a small project
+# But it's a way of making it easier to add new ways to interact with a skill
 class Alexa:
     def __init__(self):
         self.handlers = []
